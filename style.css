@@ -1,6 +1,5 @@
 body{
     background-color: aquamarine;
-
 }
 
 .row.img{
@@ -17,7 +16,7 @@ body{
 footer{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
-    color:aquamarine;
+    color: rgb(8, 107, 150);
     text-align: center;
 }
 

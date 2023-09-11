@@ -10,7 +10,7 @@
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar bg-aquamarine" data-bs-theme="dark">
+    <nav class="sticky navbar bg-aquamarine " data-bs-theme="dark">
       <!-- Navbar content -->
       <nav class="w-100 bg-body-tertiary">
         <div class="container-fluid">
@@ -25,7 +25,7 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">About</a>
                 </li>
@@ -44,7 +44,7 @@
                   </ul>
                 </li>
               </ul>
-              <form class="d-flex" role="search">
+              <form class="d-flex ms-auto" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
               </form>
@@ -119,9 +119,11 @@
 
       <h2 class="text-center p-5 mb-5"><em class="bg-bisque">IMAGES</em> OF THE WEEK</h2>
       <div class="w-100 bg-dark-subtle mb-5 p-5">
-        <div class="row">
-          <span class="border border-primary"><img src="images/10.jpg" class="rounded float-start w-50 p-5" alt="Moon Night"><img src="images/11.jpg" class="rounded float-end w-50 p-5" alt="Doku"></span>
-          <span class="border border-warning mt-5"><img src="images/7.jpg" class="rounded float-start w-50 mt-5 p-5" alt="Moon Night"><img src="images/8.jpg" class="rounded float-end w-50 mt-5 p-5" alt="Doku"></span>
+        <div class="grid-wrapper">
+          <div class="box"><img src="images/10.jpg" alt="Moon Night"></div>
+          <div class="box"><img src="images/11.jpg" alt="Doku"></div>
+          <div class="box"><img src="images/7.jpg" alt="Itadori"></div>
+          <div class="box"><img src="images/8.jpg" alt="Traffic"></div>
           
         </div>
   

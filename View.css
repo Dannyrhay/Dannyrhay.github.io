@@ -1,5 +1,6 @@
 body{
     background-color: aquamarine;
+    margin: auto;
 }
 
 .container{
@@ -8,10 +9,22 @@ body{
 }
 
 img{
-    width: 350px;
+    width: 380px;
     height: 350px;
-    margin: 5px 5px;
-    padding: 5;
+    margin: 5px;
+    padding: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        font-size: 0.4em;
+        padding: 0;
+    }
+    
+    footer{
+        font-size: 0.4em;
+        text-align: center;
+    }
 }
 
 footer{

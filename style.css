@@ -4,38 +4,107 @@ body{
 }
 
 
-.navbar{
+.navbar {
     display: flex;
     list-style: none;
     font-size: 1em;
-    margin-top: 0;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
     height: 100%;
     width: 100%;
 }
 
+.navbar-brand {
+    margin: 0; /* Remove margin */
+}
 
-.grid-wrapper{
+.navbar-nav {
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+.navbar-toggler {
+    margin: 0; /* Remove margin */
+}
+
+.navbar-collapse {
+    margin: 0; /* Remove margin */
+}
+
+.navbar-nav > li > a {
+    padding-top: 15px; /* Add padding to adjust the vertical positioning of the links */
+    padding-bottom: 15px; /* Add padding to adjust the vertical positioning of the links */
+}
+
+
+
+.flex-wrapper{
     display: flex;
-    flex-wrap: nowrap;
-    gap: 10px;
-    transition: all 0.9s;
-    width: 100%;
-    padding: 5;
+    flex-wrap:nowrap;
+    gap: 5px;
 
 }
 
-.box > img{
+.box{
+    flex: 0 0 auto;
+    width: 150px;
+}
+.box > img {
     width: 100%;
+    border: 5px solid;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Add a smooth transition on the transform property */
 }
 
-.grid-wrapper:hover{
+.box:hover {
     transform: scale(1.1);
 }
+
+
 
 footer{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
     color: rgb(8, 107, 150);
     text-align: center;
+    justify-content: center;
 }
 
+/* Additional styling for smaller screens (mobile devices) */
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .navbar {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+
+    .navbar-brand,
+    .navbar-nav {
+        width: 100%; /* Full width for brand and navigation on small screens */
+    }
+
+    .navbar-toggler {
+        display: block; /* Show the toggle button on small screens */
+    }
+
+    .navbar-collapse {
+        display: none; /* Hide the collapsed menu by default */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Stack navigation items vertically on small screens */
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%; /* Full width for each navigation item on small screens */
+    }
+
+    .navbar-nav .nav-link {
+        text-align: center; /* Center-align navigation links on small screens */
+    }
+
+    .navbar-collapse.show {
+        display: flex; /* Show the menu when the toggle button is clicked */
+    }
+}
